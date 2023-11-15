@@ -1,1 +1,1 @@
-puts "Hello, Travis! from tavis_ci branch merged"
+puts "Hello, Travis!"
