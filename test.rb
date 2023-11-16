@@ -1,1 +1,2 @@
-puts "Hello, Travis!, push from main branch"
+puts "Hello, Travis!, change master directly
+"
