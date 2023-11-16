@@ -1,6 +1,14 @@
 language: ruby
 rvm:
- - 2.2
  - 3.2
 script:
- - ruby test.rb
+ - |
+    ruby test.rb
+    echo "${TRAVIS_BRANCH}"
+
+    if [[ ! -z "${TRAVIS_TAG}" ]] ; then
+
+      echo "Tag triggered ${TRAVIS_TAG}"
+branches:
+  only:
+    - /^\d+\.\d+(\.\d+)?$/
